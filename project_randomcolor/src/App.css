@@ -1,0 +1,56 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* 세로 가운데 정렬 */
+  align-items: center;       /* 가로 가운데 정렬 */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.card {
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.bookmark-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.bookmark-button:hover {
+  background-color: #222;
+}
+
+.bookmarks {
+  margin-top: 2rem;
+}
+
+.bookmark-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.bookmark-color {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  cursor: default;
+}
