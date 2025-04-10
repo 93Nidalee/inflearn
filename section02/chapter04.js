@@ -26,8 +26,10 @@ funcA(...arr1);
 //2. Rest 매개변수
 // -> Rest는 나머지 , 나머지 매개변수 
 // 한번에 모든 매개변수를 받아올 수 있음 
-function funcB(...rest) {
-    console.log(rest);
-}
 
-funcB(...arr1)
+//매개변수를 선언하는 소괄호 안에서 쓰였기 때문에 spread연산자가 아니고 Rest매개변수 
+function funcB(one, ...rest) {
+    console.log(rest);
+} // one에는 첫번째 매개변수가 저장되고 자동적으로 나머지는 Rest 매개변수에 저장하게 됨.
+
+funcB(...arr1); // -> 여기서 들어온 모든 매개변수를 배열에 저장함 : Rest
